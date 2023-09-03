@@ -1,0 +1,259 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    margin: 4% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list{
+    display: flex;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+
+.nav-list__link{
+    color: #242E52;
+    padding: 4%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-list__link:hover{
+    opacity: 60%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main-button{
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+.shadow-button{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
+.main-container{
+    display: flex;
+    margin: 0 8%;
+    
+}
+
+.main-container__img{
+    margin-right: 100px;
+    width: 50%;
+    
+}
+
+.main-container__text--title{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: right;
+    color: #232C50;
+    margin-bottom: 2rem;
+}
+
+.main-container__text--desc{
+    font-weight: 500;
+    padding: 5% 0%;
+    text-align: right;
+    line-height: 26px;
+}
+
+.main-container__text section{
+    align-self: end;
+    
+}
+
+.int-container{
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    margin-top: 60px;
+    padding: 40px 0;
+    align-items: center;
+    
+}
+
+.int-container__title{
+    font-size: 30px;
+    font-weight: 700;
+    width: 50%;
+    margin-left: 200px;
+    margin-right: 40px;
+}
+
+.int-container__text{
+    width: 50%;
+    margin-right: 200px;
+    margin-left: 40px;
+    line-height: 24px;
+}
+
+.list-container{
+    background-color: #FAFAFA;
+    padding: 5% 10%;
+}
+
+.list-container__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-container__item{
+    display: flex;
+    margin: 0 15px;
+    padding: 20px;
+    width: 45%;
+}
+
+.list-centered{
+    align-self: center;
+}
+
+.button-list{
+    height: 40px;
+    font-weight: 700;
+}
+
+.list-container__item--content{
+    margin-left: 20px;
+}
+
+.list-container__item--title{
+    color: #323851;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+
+.list-container__item--text{
+    color: #B3B2B7;
+    line-height: 24px;
+}
+
+.tier-container{
+    padding: 5% 10%;
+    margin: 80px 0;
+}
+
+.tier-container__title{
+    font-weight: 700;
+    font-size: 39px;
+    text-align: center;
+    color: #242E53;
+    margin-bottom: 100px;
+}
+
+.tier-container__list{
+    display: flex;
+}
+
+.tier-container__list--card{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+}
+
+
+.tier-container__list--img{
+    width: 80px;
+    position: absolute;
+    top: -20%;
+    right: 40%
+}
+
+.tier-container__list--title{
+    font-weight: 700;
+    text-align: center;
+    color: #3F4868;
+    margin: 30px 0;
+
+}
+
+.tier-container__list--text{
+    color: #B9B9C1;
+    line-height: 25px;
+}
+
+.tier-button{
+    margin-top: 50px;
+}
+
+.tier-button:hover{
+    opacity: 60%;
+    transition: all 0.3s ease-in-out;
+}
+
+.int-button{
+    color:#8B48BF;
+    background-color: #FFFFFF;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #1E1E26;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color:#FFFFFF;
+    padding: 5% 8%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.footer-logos__list{
+    display: flex;
+    gap: 1em;
+    margin-top: 100px;
+}
+
+.footer-nav{
+    display: flex;
+    padding: 0 15px;
+}
+
+.footer-nav__list{
+    margin-right: 60px;
+}
+
+.footer-nav__list--link{
+    padding: 10px;
+}
+
+.footer-copyright{
+    color: #8C8C94;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+
+}
+
+
+
+.footer-searchbar__bar{
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.footer-searchbar__bar::placeholder{
+    color: #A0A0A0;
+}

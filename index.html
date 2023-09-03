@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <img class="nav-img">
+            <img class="nav-img" src="/img/logo.svg" alt="Logo Sportit">
             <ul class="nav-list">
                 <li class="nav-list__link"><a href="#">Sports</a></li>
                 <li class="nav-list__link"><a href="#">Products</a></li>
@@ -17,15 +22,17 @@
                 <li class="nav-list__link"><a href="#">Community</a></li>
             </ul>
             
-            <button class="main-button">Contact</button>
+            <button class="main-button  shadow-button">Contact</button>
         </nav>
     </header>
     <main>
         <div class="main-container">
-            <img class="main-container__img">
-            <h1 class="main-container__title">LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-            <p class="main-container__text">The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-            <button class="main-button shadow-button">Contact</button>
+            <img class="main-container__img" src="/img/padel-intro.png" alt="Deportista">
+            <div class="main-container__text">
+                <h1 class="main-container__text--title">LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+                <p class="main-container__text--desc">The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+                <button class="main-button">Contact</button>
+            </div>  
         </div>
         <div class="int-container">
             <h2 class="int-container__title">What's different between pros?</h2>
@@ -36,6 +43,7 @@
         <div class="list-container">
             <ol class="list-container__list">
                 <li class="list-container__item">
+                    <button class="main-button button-list">01</button>
                     <div class="list-container__item--content">
                         <h4 class="list-container__item--title">Track company-wide progress</h4>
                         <p class="list-container__item--text">
@@ -44,6 +52,7 @@
                     </div>
                 </li>
                 <li class="list-container__item">
+                    <button class="main-button button-list">02</button>
                     <div class="list-container__item--content">
                         <h4 class="list-container__item--title">Advance built-in reports</h4>
                         <p class="list-container__item--text">
@@ -51,7 +60,8 @@
                         </p>
                     </div>
                 </li>
-                <li class="list-container__item">
+                <li class="list-container__item list-centered">
+                    <button class="main-button button-list">03</button>
                     <div class="list-container__item--content">
                         <h4 class="list-container__item--title">Everything you need in one place</h4>
                         <p class="list-container__item--text">
@@ -65,90 +75,91 @@
             <h2 class="tier-container__title">Best of the month</h2>
             <div class="tier-container__list">
                 <div class="tier-container__list--card">
-                    <img class="tier-container__list--img">
+                    <img class="tier-container__list--img" src="/img/avatar-sanyo.png">
                     <h4 class="tier-container__list--title">Sanyo</h4>
                     <p class="tier-container__list--text">
                         Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                     </p>
                 </div>
                 <div class="tier-container__list--card">
-                    <img class="tier-container__list--img">
+                    <img class="tier-container__list--img" src="/img/avatar.lebron.png">
                     <h4 class="tier-container__list--title">Lebron</h4>
                     <p class="tier-container__list--text">
                         Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                     </p>
                 </div>
                 <div class="tier-container__list--card">
-                    <img class="tier-container__list--img">
+                    <img class="tier-container__list--img" src="/img/avatar-navarro.png">
                     <h4 class="tier-container__list--title">Navarro</h4>
                     <p class="tier-container__list--text">
                         Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                     </p>
                 </div>
             </div>
-            <button class="main-button">More</button>
+            <button class="main-button tier-button">More</button>
         </div>
         <div class="int-container">
             <h2 class="int-container__title">Get to know the best teams of the year</h2>
-            <button class="int-container__button shadow-button">Go for it</button>
+            <button class="main-button shadow-button int-button">Go for it</button>
         </div>
     </main>
     <footer>
         <div class="footer-logos">
-            <img class="footer-logos__icon">
+            <img class="footer-logos__icon" src="/img/logo-white.svg">
             <ul class="footer-logos__list">
                 <li class="footer-logos__list--media">
-                    <a href=""><img src="" alt=""></a>
+                    <a href="#"><img src="/img/icon-facebook.svg" alt=""></a>
                 </li>
                 <li class="footer-logos__list--media">
-                    <a href=""><img src="" alt=""></a>
+                    <a href="#"><img src="/img/icon-youtube.svg" alt=""></a>
                 </li>
                 <li class="footer-logos__list--media">
-                    <a href=""><img src="" alt=""></a>
+                    <a href="#"><img src="/img/icon-twitter.svg" alt=""></a>
                 </li>
                 <li class="footer-logos__list--media">
-                    <a href=""><img src="" alt=""></a>
+                    <a href="#"><img src="/img/icon-pinterest.svg" alt=""></a>
                 </li>
                 <li class="footer-logos__list--media">
-                    <a href=""><img src="" alt=""></a>
-                </li>
-                <li class="footer-logos__list--media">
-                    <a href=""><img src="" alt=""></a>
+                    <a href="#"><img src="/img/icon-instagram.svg" alt=""></a>
                 </li>
             </ul>
         </div>
         <div class="footer-nav">
             <ul class="footer-nav__list">
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="#">Pricing</a>
                 </li>
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="#">Products</a>
                 </li>
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="#">About Us</a>
                 </li>
             </ul>
-            <ul class="footer-nav__list">
+            <ul>
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="#">Trainning</a>
                 </li>
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="">Community</a>
                 </li>
                 <li class="footer-nav__list--link">
-                    <a href=""></a>
+                    <a href="">Privacy Policy</a>
                 </li>
             </ul>
         </div>
-        <div class="footer-searchbar">
-            <input type="search">
+        <div>
+            <form class="footer-searchbar">
+                <input class="footer-searchbar__bar" type="text" placeholder="Update your inbox...">
+                <button class="main-button">Go</button>
+            </form>
+            
         </div>
         <div class="footer-copyright">
-            <span></span>
+            <span>Copyright 2020. All Rights Reserved</span>
         </div>
     </footer>
 </body>
