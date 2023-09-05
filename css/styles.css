@@ -3,20 +3,19 @@
     box-sizing: border-box;
 }
 
+/*Menú de navegación*/
 nav{
     margin: 4% 8%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }
 
 .nav-list{
     display: flex;
     font-family: 'Be Vietnam Pro', sans-serif;
     justify-content: space-around;
-    width: 50%;
-    
+    width: 50%; 
 }
 
 .nav-list__link{
@@ -31,11 +30,10 @@ nav{
     transition: all 0.3s ease-in-out;
 }
 
-
 .main-button{
     background-color: #8B48BF;
     color: #FFFFFF;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border: none;
     border-radius: 25px;
     font-size: 13px;
@@ -44,17 +42,14 @@ nav{
 .shadow-button{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
 }
+/*Menú de navegación*/
 
+/*Contenedor principal*/
 .main-container{
     display: flex;
     margin: 0 8%;
-    
-}
-
-.main-container__img{
-    margin-right: 100px;
-    width: 50%;
-    
+    gap: 5rem;
+    align-items: center;
 }
 
 .main-container__text--title{
@@ -65,43 +60,43 @@ nav{
     margin-bottom: 2rem;
 }
 
+.main-container__text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 .main-container__text--desc{
     font-weight: 500;
-    padding: 5% 0%;
     text-align: right;
     line-height: 26px;
+    margin: 40px 0 60px;
 }
+/*Contenedor principal*/
 
-.main-container__text section{
-    align-self: end;
-    
-}
-
+/*Contenedor interno 1*/
 .int-container{
     background-color: #8B48BF;
     color: #FFFFFF;
     display: flex;
     margin-top: 60px;
-    padding: 40px 0;
+    padding: 8% 12%;
     align-items: center;
-    
+    gap: 5rem;
 }
 
 .int-container__title{
     font-size: 30px;
     font-weight: 700;
-    width: 50%;
-    margin-left: 200px;
-    margin-right: 40px;
 }
 
 .int-container__text{
-    width: 50%;
-    margin-right: 200px;
-    margin-left: 40px;
+    width: 70%;
     line-height: 24px;
 }
+/*Contenedor interno 1*/
 
+/*Contenedor de listado*/
 .list-container{
     background-color: #FAFAFA;
     padding: 5% 10%;
@@ -111,44 +106,47 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .list-container__item{
     display: flex;
-    margin: 0 15px;
-    padding: 20px;
-    width: 45%;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
 }
 
-.list-centered{
-    align-self: center;
-}
-
-.button-list{
-    height: 40px;
+.list-button{
     font-weight: 700;
 }
 
 .list-container__item--content{
+    display: flex;
     margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .list-container__item--title{
     color: #323851;
-    margin-bottom: 20px;
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 
 .list-container__item--text{
     color: #B3B2B7;
     line-height: 24px;
+    padding:  30px 20px 30px 118px;
 }
+/*Contenedor de listado*/
 
+/*Contenedor de tier list*/
 .tier-container{
     padding: 5% 10%;
     margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tier-container__title{
@@ -172,7 +170,6 @@ nav{
     position: relative;
 }
 
-
 .tier-container__list--img{
     width: 80px;
     position: absolute;
@@ -185,7 +182,6 @@ nav{
     text-align: center;
     color: #3F4868;
     margin: 30px 0;
-
 }
 
 .tier-container__list--text{
@@ -201,18 +197,25 @@ nav{
     opacity: 60%;
     transition: all 0.3s ease-in-out;
 }
+/*Contenedor de tier list*/
 
+/*Contenedor interno 2*/
+.second-int__title{
+    width: 70%;
+    padding: 0 6%;
+}
 .int-button{
     color:#8B48BF;
     background-color: #FFFFFF;
-    font-weight: 700;
 }
+/*Contenedor interno 2*/
 
+/*footer*/
 footer{
     background-color: #1E1E26;
     font-family: 'Be Vietnam Pro', sans-serif;
     color:#FFFFFF;
-    padding: 5% 8%;
+    padding: 5% 7%;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -242,11 +245,9 @@ footer{
     color: #8C8C94;
     position: absolute;
     top: 70%;
-    left: 70%;
+    left: 65%;
 
 }
-
-
 
 .footer-searchbar__bar{
     border-radius: 25px;
@@ -256,4 +257,136 @@ footer{
 
 .footer-searchbar__bar::placeholder{
     color: #A0A0A0;
+}
+
+@media (max-width: 600px){
+
+    /*Menú de navegación*/
+    .nav-list{
+        display: none;
+    }
+    nav{
+        margin: 50px;
+    }
+    nav button{
+        display: none;
+    }
+    /*Menú de navegación*/
+
+    /*Contenedor principal*/
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap:0;
+    }
+
+    .main-container__img{
+        margin: 20px 0 60px 0;
+        width: 100%;
+    }
+
+    .main-container__text--desc{
+        margin: 15px 0 30px 0;
+    }
+    /*Contenedor principal*/
+
+    /*Contenedor interno 1*/
+    .int-container{
+        background-color: #3CDDF3;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 3rem;
+    }
+
+    .int-container__title{
+        text-align: start;
+    }
+
+    .int-container__text{
+        margin: 0;
+        text-align: start;
+        width: auto;
+    }
+    /*Contenedor interno 1*/
+
+
+    /*Contenedor de listado*/
+    .list-button{
+        height: 50px;
+    }
+
+    .list-container{
+        padding: 14% 0 12% 10%;
+        background-color: #FFFFFF;
+    }
+
+    .list-container__item{
+        margin-right:0;
+        padding: 0;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .list-container__item--content{
+        margin: 0;
+        background-color: rgb(139, 72, 191, 0.3);
+        border-radius: 25px 0 0 25px;
+        padding-right: 1.5rem;
+    }
+
+    .list-container__item--text{
+        padding: 40px 30px 40px 0px;
+    }
+    /*Contenedor de listado*/
+
+    /*Contenedor de tier list*/
+    .tier-container{
+        margin:0;
+        padding: 30px;
+    }
+
+    .tier-container__list--card:nth-child(2n-1){
+        display: none;
+    }
+    
+    .tier-button{
+        width: 30%;
+    }
+    /*Contenedor de tier list*/
+
+    /*Contenedor interno 2*/
+    .second-int{
+        padding: 40px 40px;
+    }
+
+    .second-int__title{
+        line-height: 48px;
+        text-align: center;
+        font-size: 40px;
+        width: auto;
+        padding: 0;
+    }
+
+    .int-button{
+        background-color: #232C50;
+        color: #FFFFFF;
+        width: 50%;
+    }
+    /*Contenedor interno 2*/
+    
+    /*footer*/
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logos{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    /*footer*/
 }
